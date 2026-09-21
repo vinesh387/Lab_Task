@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fc;
+    margin: 0;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+
+
+.pricing-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+
+    width: 310px;
+
+    position: relative;
+
+    border-top: 5px solid #b2bec3;
+
+    padding: 30px 24px;
+
+    box-sizing: border-box;
+}
+
+
+
+.pricing-card.popular {
+    border-top: 5px solid #6c5ce7;
+
+    transform: scale(1.05);
+
+    box-shadow: 0 8px 25px rgba(108, 92, 231, 0.20);
+}
+
+
+
+.tier-tag {
+    background-color: #6c5ce7;
+
+    color: #ffffff;
+
+    font-size: 0.72em;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    padding: 4px 12px;
+
+    border-radius: 12px;
+
+    display: inline-block;
+
+    margin-bottom: 12px;
+}
+
+
+
+.plan-name {
+    margin: 0 0 6px;
+
+    color: #2d3436;
+
+    font-size: 1.3em;
+}
+
+
+
+.plan-subtitle {
+    margin: 0 0 16px;
+
+    color: #7f8c8d;
+
+    font-size: 0.85em;
+}
+
+
+
+.price {
+    font-size: 2.4em;
+
+    font-weight: bold;
+
+    color: #2d3436;
+
+    margin-bottom: 20px;
+}
+
+
+
+.price .currency {
+    font-size: 0.55em;
+
+    vertical-align: super;
+}
+
+
+
+.price .period {
+    font-size: 0.4em;
+
+    color: #95a5a6;
+
+    font-weight: normal;
+}
+
+
+
+.features-list {
+    padding-left: 20px;
+
+    margin-bottom: 25px;
+
+    color: #636e72;
+
+    line-height: 2;
+}
+
+
+
+.pricing-btn {
+    width: 100%;
+
+    background-color: #6c5ce7;
+
+    color: #ffffff;
+
+    border: 2px solid #6c5ce7;
+
+    padding: 12px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+
+.pricing-btn:hover {
+    background-color: transparent;
+
+    color: #6c5ce7;
+}
+
+
+
+@media (max-width: 1000px) {
+
+    .pricing-container {
+        flex-direction: column;
+    }
+
+    .pricing-card.popular {
+        transform: scale(1);
+    }
+
+}
